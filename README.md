@@ -57,8 +57,9 @@ A modern, responsive portfolio website built with **Next.js 15**, **React 19**, 
 
 2. **Install dependencies**
    ```bash
-   npm install
-   ```
+   npm install   # the project no longer includes react-day-picker so peer dependency
+   # conflicts on Vercel are resolved; you shouldn't need to run
+   # `npm install --legacy-peer-deps`.   ```
 
 3. **Environment Setup**
    ```bash
@@ -100,12 +101,12 @@ src/
 
 ## 🌐 Deployment
 
-See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for complete deployment instructions.
+See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for complete deployment instructions. The calendar dependency (`react-day-picker`) causing peer dependency conflicts has been removed; the interface now relies on `react-datepicker`.
 
 Quick deploy to Vercel:
 1. Push to GitHub
 2. Connect to Vercel
-3. Add environment variables
+3. Add environment variables (see DEPLOYMENT_GUIDE)
 4. Deploy!
 
 ## 📄 License

@@ -1,6 +1,6 @@
 # 🎨 Nikhil Sutar - Full-Stack Developer Portfolio
 
-A modern, responsive portfolio website built with **Next.js 15**, **React 19**, **TypeScript**, **Tailwind CSS**, and **GSAP animations**. Features a dynamic admin panel for managing projects, skills, work experience, and contact requests.
+A modern, responsive portfolio website built with **Next.js 15 (latest patch)**, **React 19**, **TypeScript**, **Tailwind CSS**, and **GSAP animations**. Features a dynamic admin panel for managing projects, skills, work experience, and contact requests.
 
 ## ✨ Features
 

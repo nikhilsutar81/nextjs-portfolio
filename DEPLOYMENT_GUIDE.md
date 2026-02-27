@@ -2,6 +2,8 @@
 
 This document walks you through deploying the portfolio to Vercel. The instructions assume the project has been audited and is building cleanly (no TypeScript or lint errors).
 
+> **Security update:** the template now pins Next.js to 15.5.12, a patched release that addresses CVE‑2025‑66478. Always keep Next.js up to date in production.
+
 ## 1. Prepare Environment Variables
 
 Copy `.env.example` to `.env.local` and fill in all values. The same variables should be configured in the Vercel dashboard under your project settings:

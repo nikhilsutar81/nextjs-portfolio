@@ -13,7 +13,7 @@ export const AboutSection = async () => {
                 <h2 className="w-full sm:mt-6 text-left text-2xl sm:text-3xl md:text-4xl font-bold font-breeserif italic pr-12 sm:pr-0 sm:pl-8 md:pl-16 bg-gradient-to-b from-white to-zinc-300 bg-clip-text text-transparent transition-all duration-300">
                     A Bit About Me
                 </h2>
-                <div className="mt-6 text-right text-sm md:text-base sm:w-full lg:w-11/12 font-lato">
+                <div className="mt-6 text-left text-sm md:text-base sm:w-full lg:w-11/12 font-lato sm:pl-8 md:pl-16">
                     <p>
                         I&apos;m Nikhil Sutar, a Full-Stack Web Developer with a focus on building scalable, high-performance SaaS and complex software applications. I thrive on delivering clean, efficient code, prioritizing customer satisfaction, and am capable of working both independently and as part of a collaborative team.
                     </p>

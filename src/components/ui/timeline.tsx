@@ -41,10 +41,10 @@ export const Timeline = ({ data }: { data: string }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto pt-20 px-4 sm:pl-8 md:px-8 lg:px-10 transition-all duration-300">
-        <h2 className="text-2xl italic md:text-4xl mb-4 font-breeserif text-black dark:text-white max-w-4xl transition-all duration-300">
+        <h2 className="text-2xl italic md:text-4xl mb-4 font-breeserif text-black dark:text-white max-w-4xl transition-all duration-300 sm:-ml-12">
         The Road So Far
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm transition-all duration-300">
+        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm transition-all duration-300 sm:-ml-12">
           A journey through my evolving career, from first steps to standout achievements.
         </p>
       </div>

@@ -7,6 +7,7 @@ import { ProjectType } from "@/types/types";
 import { Folder, Link2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { ScrollFadeIn } from "@/components/scroll-fade-in";
 
 
 connectDB();
@@ -17,12 +18,14 @@ export async function ProjectsSection() {
     return (
         <div className="w-full min-h-screen mb-16">
             <div className="max-w-7xl mx-auto md:pt-28 px-4 sm:px-0 sm:pl-0 md:px-8 lg:px-10 transition-all duration-300">
-                <h2 className="text-2xl italic md:text-4xl mb-4 font-breeserif dark:text-white bg-gradient-to-br from-zinc-50 to-neutral-200 bg-clip-text text-transparent max-w-4xl transition-all duration-300 sm:-ml-12">
-                    Proof of Work, Passion & Precision
-                </h2>
-                <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm transition-all duration-300 sm:-ml-12">
-                    Dive into projects that reflect my technical skills and dedication to continuous learning.
-                </p>
+                <ScrollFadeIn direction="left">
+                    <h2 className="text-2xl italic md:text-4xl mb-4 font-breeserif dark:text-white bg-gradient-to-br from-zinc-50 to-neutral-200 bg-clip-text text-transparent max-w-4xl transition-all duration-300 sm:-ml-12">
+                        Proof of Work, Passion & Precision
+                    </h2>
+                    <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm transition-all duration-300 sm:-ml-12">
+                        Dive into projects that reflect my technical skills and dedication to continuous learning.
+                    </p>
+                </ScrollFadeIn>
             </div>
             <div className="w-full flex flex-col items-center justify-start mt-12 gap-6 lg:px-9">
                 {
@@ -31,9 +34,14 @@ export async function ProjectsSection() {
                         <p className=" text-xl mx-auto my-8">No projects Added Yet by Admin</p>
                         :
                         projects?.map((proj, index) => (
-                            <div key={proj?._id || index} className={cn(`w-full flex flex-col md:flex-row items-stretch md:items-center justify-between p-4 md:px-8 lg:px-10`,
-                                index % 2 !== 0 && "md:flex-row-reverse"
-                            )}>
+                            <ScrollFadeIn
+                                key={proj?._id || index}
+                                direction={index % 2 === 0 ? "left" : "right"}
+                                className="w-full"
+                            >
+                                <div className={cn(`w-full flex flex-col md:flex-row items-stretch md:items-center justify-between p-4 md:px-8 lg:px-10`,
+                                    index % 2 !== 0 && "md:flex-row-reverse"
+                                )}>
                                 {/* <div className="relative w-full md:w-5/12 h-full">
                                     <Image
                                         fill
@@ -96,10 +104,12 @@ export async function ProjectsSection() {
                                                     <Link2 className="rounded-full h-7 w-7 " /> <span className="font-semibold font-lato">Demo</span>
                                                 </Link>
                                             }
-                                        </div>}
+                                        </div>
+                                    }
                                 </div>
                             </div>
-                        ))
+                        </ScrollFadeIn>
+                    ))
                 }
             </div>
             <div className="w-full flex items-center justify-center mt-6 px-8">

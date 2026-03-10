@@ -2,6 +2,7 @@ import PDFViewer from "@/components/PDFViewer";
 import connectDB from "@/db/connectDB";
 import ResumeModel from "@/models/ResumeModel";
 import { ResumeType } from "@/types/types";
+import { ScrollFadeIn } from "@/components/scroll-fade-in";
 
 connectDB();
 
@@ -19,9 +20,11 @@ export default async function Resume() {
                     </div>
                 )
                     :
-                    <div className="h-full mx-auto max-w-2xl flex items-center flex-col">
-                        <PDFViewer url={resume?.link} />
-                    </div>
+                    <ScrollFadeIn direction="up">
+                        <div className="h-full mx-auto max-w-2xl flex items-center flex-col">
+                            <PDFViewer url={resume?.link} />
+                        </div>
+                    </ScrollFadeIn>
             }
         </div>
     )

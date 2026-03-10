@@ -7,6 +7,7 @@ import { ProjectsSection } from "@/components/viewer/projects/projects-section";
 import { SkillsSection } from "@/components/viewer/skills/skill-section";
 import { Socials } from "@/components/viewer/socials/socials";
 import { WorkExpSection } from "@/components/viewer/work-exp/work-exp-section";
+import { ScrollFadeIn } from "@/components/scroll-fade-in";
 
 
 export default async function Home() {
@@ -15,13 +16,25 @@ export default async function Home() {
       <HeroSection />
       {/* <p className=" font-semibold text-5xl mb-20">Everything App for your teams</p> */}
       {/* <SocialsMaarquee /> */}
-      <Socials />
-      <AboutSection />
-      <WorkExpSection />
-      <ProjectsSection />
-      <SkillsSection />
+      <ScrollFadeIn direction="up">
+        <Socials />
+      </ScrollFadeIn>
+      <ScrollFadeIn direction="up">
+        <AboutSection />
+      </ScrollFadeIn>
+      <ScrollFadeIn direction="up">
+        <WorkExpSection />
+      </ScrollFadeIn>
+      <ScrollFadeIn direction="up">
+        <ProjectsSection />
+      </ScrollFadeIn>
+      <ScrollFadeIn direction="up">
+        <SkillsSection />
+      </ScrollFadeIn>
       {/* <CTA /> */}
-      <ContactSection />
+      <ScrollFadeIn direction="up">
+        <ContactSection />
+      </ScrollFadeIn>
     </div>
   );
 }

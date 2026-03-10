@@ -2,6 +2,7 @@ import { ExternalLink, Paperclip } from "lucide-react";
 import Link from "next/link";
 import { ContactNavButton } from "./contact-nab";
 import { TypewriterEffect } from "./typewrite-effect";
+import { ScrollFadeIn } from "@/components/scroll-fade-in";
 
 
 export const HeroSection2 = () => {
@@ -37,27 +38,33 @@ export const HeroSection = () => {
 
             {/* Content */}
             <div className="z-10 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)] px-4 flex flex-col text-center items-center justify-center">
-                <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold font-eaglelake text-zinc-200">
-                    <span className="text-2xl sm:text-3xl md:text-4xl ">I&apos;m <br className="" /></span>NIKHIL{" "}
-                    <span className="relative bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-[length:200%_auto] animate-aurora bg-clip-text text-transparent">
-                        SUTAR
-                    </span>
-                </h1>
+                <ScrollFadeIn direction="up" duration={1.2}>
+                    <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold font-eaglelake text-zinc-200">
+                        <span className="text-2xl sm:text-3xl md:text-4xl ">I&apos;m <br className="" /></span>NIKHIL{" "}
+                        <span className="relative bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-[length:200%_auto] animate-aurora bg-clip-text text-transparent">
+                            SUTAR
+                        </span>
+                    </h1>
+                </ScrollFadeIn>
                 {/* <div className="mt-2 sm:text-xl font-serif text-zinc-300 font-medium tracking-widest">
                     Passionate <ContainerTextFlip textClassName="text-lg font-serif" className=" px-2 py-0" words={['Full Stack Developer', 'Lalit Gandu', 'Sunny Koladiya', 'Tejas Rathod']} />
                 </div> */}
-                <TypewriterEffect />
-                <div className="z-10 mt-4 gap-4 text-xs flex items-center">
-                    <Link
-                        href="/resume"
-                        scroll
-                        className="uppercase relative group text-xs md:text-sm border hover:text-neutral-950 border-zinc-400 px-6 py-2 font-bold tracking-wider cursor-pointer overflow-hidden"
-                    >
-                        <div className="absolute -z-10 inset-0 -translate-x-full group-hover:translate-x-0 group-hover:bg-zinc-300 transition-all duration-300" />
-                        <span className="z-10 group-hover:text-neutral-950 flex items-center gap-2"><Paperclip className="w-4 h-4" />Resume</span>
-                    </Link>
-                    <ContactNavButton />
-                </div>
+                <ScrollFadeIn direction="up" delay={0.4} duration={1}>
+                    <TypewriterEffect />
+                </ScrollFadeIn>
+                <ScrollFadeIn direction="up" delay={0.8} duration={1}>
+                    <div className="z-10 mt-4 gap-4 text-xs flex items-center">
+                        <Link
+                            href="/resume"
+                            scroll
+                            className="uppercase relative group text-xs md:text-sm border hover:text-neutral-950 border-zinc-400 px-6 py-2 font-bold tracking-wider cursor-pointer overflow-hidden"
+                        >
+                            <div className="absolute -z-10 inset-0 -translate-x-full group-hover:translate-x-0 group-hover:bg-zinc-300 transition-all duration-300" />
+                            <span className="z-10 group-hover:text-neutral-950 flex items-center gap-2"><Paperclip className="w-4 h-4" />Resume</span>
+                        </Link>
+                        <ContactNavButton />
+                    </div>
+                </ScrollFadeIn>
             </div>
             <div className="absolute bottom-0 w-full h-28 bg-gradient-to-t from-black to-transparent pointer-events-none z-20" />
         </div>

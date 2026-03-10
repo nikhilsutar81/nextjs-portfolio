@@ -78,15 +78,19 @@ export const SkillsSection = async () => {
                                             >
                                                 {/* Skill Content */}
                                                 <div className="flex flex-col items-center justify-center gap-2 md:gap-3 h-full">
-                                                    {skill?.logo?.url && (
+                                                    {skill?.logo?.url ? (
                                                         <div className="relative h-8 w-8 md:h-10 md:w-10 flex-none">
                                                             <Image
-                                                                src={skill?.logo?.url}
-                                                                alt={skill?.skill}
+                                                                src={skill.logo.url}
+                                                                alt={skill.skill}
                                                                 fill
                                                                 sizes="(max-width: 768px) 32px, 40px"
                                                                 className="object-contain transition-all duration-300"
                                                             />
+                                                        </div>
+                                                    ) : (
+                                                        <div className="h-8 w-8 md:h-10 md:w-10 bg-zinc-800 rounded-full flex items-center justify-center text-[8px] text-zinc-500">
+                                                            No Logo
                                                         </div>
                                                     )}
                                                     <span className="text-xs md:text-sm font-medium text-zinc-300 text-center line-clamp-2 leading-tight">

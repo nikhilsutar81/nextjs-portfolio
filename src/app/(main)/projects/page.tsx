@@ -8,11 +8,11 @@ import { Metadata } from "next";
 import { ScrollFadeIn } from "@/components/scroll-fade-in";
 
 export const metadata: Metadata = {
-    title: "Projects | Kinesh Lohar Portfolio",
+    title: "Projects | Nikhil Sutar Portfolio",
     description:
-      "Explore a curated collection of projects by Kinesh Lohar, full-stack software developer specializing in Next.js, React, Node.js, and AI-powered solutions. Each project reflects his skills in building responsive, high-performance web applications.",
+      "Explore a curated collection of projects by Nikhil Sutar, full-stack software developer specializing in Next.js, React, Node.js, and AI-powered solutions. Each project reflects his skills in building responsive, high-performance web applications.",
     keywords: [
-      "Kinesh Lohar projects",
+      "Nikhil Sutar projects",
       "full-stack project showcase",
       "Next.js portfolio",
       "React developer work",
@@ -27,26 +27,26 @@ export const metadata: Metadata = {
       canonical: "https://kineshlohar.vercel.app/projects",
     },
     openGraph: {
-      title: "Kinesh Lohar | Project Showcase",
+      title: "Nikhil Sutar | Project Showcase",
       description:
-        "From concept to deployment, browse through Kinesh Lohar's professional portfolio including MERN stack and AI-integrated projects.",
+        "From concept to deployment, browse through Nikhil Sutar's professional portfolio including MERN stack and AI-integrated projects.",
       url: "https://kineshlohar.vercel.app/projects",
       images: [
         {
           url: "https://kineshlohar.vercel.app/og-projects.png", // update with real image
           width: 1200,
           height: 630,
-          alt: "Projects by Kinesh Lohar",
+          alt: "Projects by Nikhil Sutar",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Kinesh Lohar | Projects",
+      title: "Nikhil Sutar | Projects",
       description:
-        "Discover full-stack applications and AI-integrated solutions built by Kinesh Lohar using modern technologies like Next.js, React, and Node.js.",
-      site: "@kineshlohar",
-      creator: "@kineshlohar",
+        "Discover full-stack applications and AI-integrated solutions built by Nikhil Sutar using modern technologies like Next.js, React, and Node.js.",
+      site: "@nikhilsutar_",
+      creator: "@nikhilsutar_",
       images: ["https://kineshlohar.vercel.app/og-projects.png"],
     },
   };

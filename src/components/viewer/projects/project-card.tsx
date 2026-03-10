@@ -15,12 +15,18 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
 
             <h3 className="z-20 top-4 left-4 text-xl font-medium font-serif tracking-wide text-zinc-200 capitalize">{project?.title}</h3>
             <div className="relative w-full min-h-48 rounded-lg overflow-hidden ">
-                <Image
-                    src={project?.thumbnail?.url}
-                    alt={project?.thumbnail?.id}
-                    fill
-                    className=" object-cover opacity-90 transition-transform duration-700 hover:scale-110"
-                />
+                {project?.thumbnail?.url ? (
+                    <Image
+                        src={project.thumbnail.url}
+                        alt={project.thumbnail.id || project.title}
+                        fill
+                        className=" object-cover opacity-90 transition-transform duration-700 hover:scale-110"
+                    />
+                ) : (
+                    <div className="w-full h-full bg-zinc-900 flex items-center justify-center text-zinc-500">
+                        No Thumbnail
+                    </div>
+                )}
             </div>
             <p className=" text-xs sm:text-sm text-zinc-200 capitalize">
                 {project?.description}

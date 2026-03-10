@@ -31,15 +31,20 @@ const CertCard = ({ label, data }: { label: string; data: EduCertType[] | [] }) 
                         <ScrollFadeIn key={item?._id} direction="up" delay={index * 0.1}>
                             <div className="group flex items-center gap-4 px-3 py-4 sm:px-8 sm:py-6 border border-neutral-800 bg-zinc-950">
                                 {
-                                    item?.thumbnail?.url &&
-                                    <div className="relative h-16 w-20 lg:h-20 lg:w-20">
-                                        <Image
-                                            src={item?.thumbnail?.url}
-                                            fill
-                                            alt={item?.title}
-                                            className="object-contain"
-                                        />
-                                    </div>
+                                    item?.thumbnail?.url ? (
+                                        <div className="relative h-16 w-20 lg:h-20 lg:w-20">
+                                            <Image
+                                                src={item.thumbnail.url}
+                                                fill
+                                                alt={item.title}
+                                                className="object-contain"
+                                            />
+                                        </div>
+                                    ) : (
+                                        <div className="h-16 w-20 lg:h-20 lg:w-20 bg-zinc-900 rounded flex items-center justify-center text-[10px] text-zinc-600">
+                                            No Logo
+                                        </div>
+                                    )
                                 }
                                 <div className="flex flex-col justify-center gap-1">
                                     <div className="flex items-start justify-between gap-2">

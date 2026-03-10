@@ -50,13 +50,19 @@ export async function ProjectsSection() {
                                     />
                                 </div> */}
                                 <div className="relative w-full sm:w-6/12- md:w-6/12 lg:w-5/12 h-full">
-                                    <Image
-                                        src={proj?.thumbnail?.url}
-                                        alt={proj?.title}
-                                        width={400}
-                                        height={250}
-                                        className="object-contain w-full h-full"
-                                    />
+                                    {proj?.thumbnail?.url ? (
+                                        <Image
+                                            src={proj.thumbnail.url}
+                                            alt={proj.title}
+                                            width={400}
+                                            height={250}
+                                            className="object-contain w-full h-full"
+                                        />
+                                    ) : (
+                                        <div className="w-full h-[250px] bg-zinc-900 flex items-center justify-center text-zinc-500">
+                                            No Thumbnail
+                                        </div>
+                                    )}
                                 </div>
                                 <div className={cn(`w-full mt-4 font-lato sm:mt-8 md:mt-0 sm:w-6/12- md:w-6/12 lg:w-7/12 flex flex-col justify-center items-start`,
                                     index % 2 === 0 && 'sm:pl-8- md:pl-8 lg:p-16',

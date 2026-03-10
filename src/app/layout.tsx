@@ -9,7 +9,7 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Nikhil Sutar | Full-Stack Web Developer",
-  description: "Portfolio of Kinesh Lohar, MERN-stack & AI/ML enthusiast based in Mumbai.",
+  description: "Portfolio of Nikhil Sutar, MERN-stack & AI/ML enthusiast based in Mumbai.",
   alternates: { canonical: "https://kineshlohar.vercel.app/" },
   icons: {
     icon: '/logo.png',
@@ -18,47 +18,36 @@ export const metadata: Metadata = {
         rel: 'canonical',
         url: 'https://kineshlohar.vercel.app/',
       },
-      {
-        rel: 'next',
-        url: 'https://kineshlohar.vercel.app/page?page=2',
-      },
-      {
-        rel: 'prev',
-        url: 'https://kineshlohar.vercel.app/page?page=1',
-      },
       // Social Media Links
-      { rel: 'me', url: 'https://x.com/kinesh_lohar' },
-      { rel: 'me', url: 'https://www.linkedin.com/in/kineshlohar' },
-      { rel: 'me', url: 'https://github.com/kineshlohar' },
-      { rel: 'me', url: 'https://www.freecodecamp.org/fcc59cce604-c645-497c-a473-73b95c9182d1' },
-      { rel: 'me', url: 'https://www.hackerrank.com/kineshlohar' },
-      { rel: 'me', url: 'https://www.instagram.com/kinesh_malviya' },
-      { rel: 'me', url: 'https://www.snapchat.com/add/kinesh123' },
+      { rel: 'me', url: 'https://x.com/nikhilsutar_' },
+      { rel: 'me', url: 'https://www.linkedin.com/in/nikhil-sutar-25a7702b2' },
+      { rel: 'me', url: 'https://github.com/nikhilsutar81' },
+      { rel: 'me', url: 'https://www.instagram.com/nikkkhil.77' },
     ],
   },
   openGraph: {
-    title: "Kinesh Lohar | Full-Stack Web Developer",
+    title: "Nikhil Sutar | Full-Stack Web Developer",
     description: `
-    I'm Kinesh Lohar, a full-stack software developer passionate about building interactive, performant web apps.
-    Kinesh Lohar specializes in Next.js, React, Node.js, and MongoDB—crafting pixel-perfect UI and scalable backends.
-    With hands-on experience in AI/ML integration and modern DevOps pipelines, Kinesh Lohar delivers robust, elegant solutions.
+    I'm Nikhil Sutar, a full-stack software developer passionate about building interactive, performant web apps.
+    Nikhil Sutar specializes in Next.js, React, Node.js, and MongoDB—crafting pixel-perfect UI and scalable backends.
+    With hands-on experience in AI/ML integration and modern DevOps pipelines, Nikhil Sutar delivers robust, elegant solutions.
   `.trim().replace(/\s+/g, ' '),
     url: "https://kineshlohar.vercel.app/",
-    siteName: "Kinesh Lohar Full stack developer personal portfolio dynamic website",
+    siteName: "Nikhil Sutar Full stack developer personal portfolio dynamic website",
     images: [
       { url: "https://kineshlohar.vercel.app/og-banner.png", width: 1200, height: 630 }
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@kinesh_lohar",
-    creator: "@kinesh_lohar",
-    title: "Kinesh Lohar | MERN Stack Developer",
-    description: "Follow Kinesh Lohar for clean code, scalable web apps, and modern full-stack development using Next.js, Tailwind, and AI/ML."
+    site: "@nikhilsutar_",
+    creator: "@nikhilsutar_",
+    title: "Nikhil Sutar | MERN Stack Developer",
+    description: "Follow Nikhil Sutar for clean code, scalable web apps, and modern full-stack development using Next.js, Tailwind, and AI/ML."
   },
   keywords: [
-    'Kinesh Lohar',
-    'Kinesh Lohar portfolio',
+    'Nikhil Sutar',
+    'Nikhil Sutar portfolio',
     'Full-stack developer India',
     'Next.js developer',
     'React developer',

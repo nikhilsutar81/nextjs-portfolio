@@ -4,9 +4,8 @@ import { WorkExperience } from "@/models/WorkExpModel";
 import { WorkExperienceTypes } from "@/types/types";
 import { ScrollFadeIn } from "@/components/scroll-fade-in";
 
-connectDB();
-
 export async function WorkExpSection (){
+    await connectDB();
     
 
     const workExpData: WorkExperienceTypes[] = await WorkExperience.find().sort({ startDate: -1 });

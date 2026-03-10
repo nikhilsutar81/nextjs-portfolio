@@ -51,10 +51,10 @@ export const metadata: Metadata = {
     },
   };
 
-connectDB()
 export default async function Projects() {
+    await connectDB();
 
-    const projects: ProjectType[] = await ProjectModel.find().limit(3).populate('techs', '_id skill logo').sort({ createdAt: -1 });
+    const projects: ProjectType[] = await ProjectModel.find().populate('techs', '_id skill logo').sort({ createdAt: -1 });
 
     return (
         <div className="w-full min-h-screen py-36">

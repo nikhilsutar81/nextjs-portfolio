@@ -9,7 +9,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ScrollFadeIn } from "@/components/scroll-fade-in";
 
-connectDB();
 
 const CertCard = ({ label, data }: { label: string; data: EduCertType[] | [] }) => {
 
@@ -69,6 +68,7 @@ const CertCard = ({ label, data }: { label: string; data: EduCertType[] | [] }) 
 }
 
 export default async function EducationsCertifications() {
+    await connectDB();
 
     const eduList: EduCertType[] = await EduCert.find();
 

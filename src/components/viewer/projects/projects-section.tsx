@@ -10,9 +10,8 @@ import Link from "next/link";
 import { ScrollFadeIn } from "@/components/scroll-fade-in";
 
 
-connectDB();
-
 export async function ProjectsSection() {
+    await connectDB();
     const projects: ProjectType[] = await ProjectModel.find().limit(3).populate('techs', '_id skill logo').sort({ createdAt: -1 });
 
     return (

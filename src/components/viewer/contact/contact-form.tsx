@@ -67,22 +67,23 @@ export const ContactForm = () => {
             }
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)}
-                    className="flex flex-col gap-4 items-stretch p-4 mt-8 md:mt-16 sm:w-8/12 md:w-6/12 transition-all duration-300"
+                    className="w-full flex flex-col gap-8 md:gap-12 transition-all duration-300 px-4 sm:px-0"
                 >
                     <FormField
                         name="fullName"
                         control={form.control}
                         render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Full Name</FormLabel>
+                            <FormItem className="space-y-4">
+                                <FormLabel className="text-lg md:text-xl font-bold text-white/90 tracking-wide font-lato">Full Name</FormLabel>
                                 <FormControl>
                                     <Input placeholder="Your Name" {...field}
                                         disabled={isSubmitting}
-                                        className="italic border-t-0 border-x-0 border-b-2 rounded-none bg-transparent 
-                                         focus-visible:ring-0 dark:bg-transparent px-0"
+                                        className="italic border-t-0 border-x-0 border-b border-zinc-800 rounded-none bg-transparent 
+                                         focus-visible:ring-0 focus-visible:border-white transition-all duration-300 dark:bg-transparent px-0 
+                                         text-zinc-300 placeholder:text-zinc-600 h-14 text-lg md:text-xl font-lato"
                                     />
                                 </FormControl>
-                                <FormMessage />
+                                <FormMessage className="text-rose-500 font-lato" />
                             </FormItem>
                         )}
                     />
@@ -90,16 +91,17 @@ export const ContactForm = () => {
                         name="email"
                         control={form.control}
                         render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Email</FormLabel>
+                            <FormItem className="space-y-4">
+                                <FormLabel className="text-lg md:text-xl font-bold text-white/90 tracking-wide font-lato">Email</FormLabel>
                                 <FormControl>
-                                    <Input placeholder="your@gmail.com" {...field}
+                                    <Input placeholder="johncena@gmail.com" {...field}
                                         disabled={isSubmitting}
-                                        className=" italic text-white border-t-0 border-x-0 border-b-2 rounded-none bg-transparent 
-                                         focus-visible:ring-0  dark:bg-transparent px-0"
+                                        className="italic border-t-0 border-x-0 border-b border-zinc-800 rounded-none bg-transparent 
+                                         focus-visible:ring-0 focus-visible:border-white transition-all duration-300 dark:bg-transparent px-0 
+                                         text-zinc-300 placeholder:text-zinc-600 h-14 text-lg md:text-xl font-lato"
                                     />
                                 </FormControl>
-                                <FormMessage />
+                                <FormMessage className="text-rose-500 font-lato" />
                             </FormItem>
                         )}
                     />
@@ -107,30 +109,30 @@ export const ContactForm = () => {
                         name="message"
                         control={form.control}
                         render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Message</FormLabel>
+                            <FormItem className="space-y-4">
+                                <FormLabel className="text-lg md:text-xl font-bold text-white/90 tracking-wide font-lato">Message</FormLabel>
                                 <FormControl>
                                     <Textarea
                                         placeholder="Describe your message..."
                                         disabled={isSubmitting}
                                         {...field}
-                                        className="italic resize-none text-white border-t-0 border-x-0 border-b-2 rounded-none bg-transparent 
-                                         focus-visible:ring-0  dark:bg-transparent px-0"
+                                        className="italic resize-none border-t-0 border-x-0 border-b border-zinc-800 rounded-none bg-transparent 
+                                         focus-visible:ring-0 focus-visible:border-white transition-all duration-300 dark:bg-transparent px-0 
+                                         text-zinc-300 placeholder:text-zinc-600 min-h-32 text-lg md:text-xl font-lato leading-relaxed"
                                     />
                                 </FormControl>
-                                <FormMessage />
+                                <FormMessage className="text-rose-500 font-lato" />
                             </FormItem>
                         )}
                     />
-                    <div className="w-full flex items-center justify-end">
+                    <div className="w-full flex items-center justify-end mt-4">
                         <Button type="submit" disabled={isSubmitting}
-                            className="capitalize bg-transparent hover:bg-transparent text-white rounded-none relative group text-xs md:text-sm border hover:text-neutral-950 border-zinc-400 px-6 py-2 font-bold tracking-wider cursor-pointer overflow-hidden"
+                            className="bg-transparent hover:bg-white text-white hover:text-black rounded-none flex items-center gap-3 border border-white/30 px-10 py-7 text-base md:text-lg font-bold tracking-widest transition-all duration-300 uppercase font-lato"
                         >
-                            <div className="absolute -z-10 inset-0 -translate-x-full group-hover:translate-x-0 group-hover:bg-zinc-300 transition-all duration-300" />
-                            <span className="z-10 group-hover:text-neutral-950 flex gap-2 items-center"><SendHorizonal className="w-4 h-4" />{isSubmitting ? 'Just a Moment...' : "Let's Connect!"}</span>
+                            <SendHorizonal className="w-5 h-5" />
+                            {isSubmitting ? 'Sending...' : "Let's Connect!"}
                         </Button>
                     </div>
-
                 </form>
             </Form>
         </>

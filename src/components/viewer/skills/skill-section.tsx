@@ -9,9 +9,8 @@ interface SkillSectionType {
     skills: SkillType[] | []
 }
 
-connectDB();
-
 export const SkillsSection = async () => {
+    await connectDB();
 
     const data: SkillSectionType[] = await Skill.aggregate([
         {

@@ -4,9 +4,8 @@ import ResumeModel from "@/models/ResumeModel";
 import { ResumeType } from "@/types/types";
 import { ScrollFadeIn } from "@/components/scroll-fade-in";
 
-connectDB();
-
 export default async function Resume() {
+    await connectDB();
 
     const resume: ResumeType | null = await ResumeModel.findOne({ resumeId: 1 });
 

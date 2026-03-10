@@ -6,9 +6,8 @@ import { ResumeType } from "@/types/types";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
-connectDB();
-
 export default async function Resume() {
+    await connectDB();
 
     const cookiesStore = await cookies();
     const token = cookiesStore.get('token');

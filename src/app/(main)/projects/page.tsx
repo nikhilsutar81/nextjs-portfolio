@@ -24,16 +24,16 @@ export const metadata: Metadata = {
       "modern web design",
     ],
     alternates: {
-      canonical: "https://kineshlohar.vercel.app/projects",
+      canonical: "https://nikhilsutar.vercel.app/projects",
     },
     openGraph: {
       title: "Nikhil Sutar | Project Showcase",
       description:
         "From concept to deployment, browse through Nikhil Sutar's professional portfolio including MERN stack and AI-integrated projects.",
-      url: "https://kineshlohar.vercel.app/projects",
+      url: "https://nikhilsutar.vercel.app/projects",
       images: [
         {
-          url: "https://kineshlohar.vercel.app/og-projects.png", // update with real image
+          url: "https://nikhlsutar.vercel.app/og-projects.png", // update with real image
           width: 1200,
           height: 630,
           alt: "Projects by Nikhil Sutar",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         "Discover full-stack applications and AI-integrated solutions built by Nikhil Sutar using modern technologies like Next.js, React, and Node.js.",
       site: "@nikhilsutar_",
       creator: "@nikhilsutar_",
-      images: ["https://kineshlohar.vercel.app/og-projects.png"],
+      images: ["https://nikhilsutar.vercel.app/og-projects.png"],
     },
   };
 

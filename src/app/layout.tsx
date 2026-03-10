@@ -10,13 +10,13 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "Nikhil Sutar | Full-Stack Web Developer",
   description: "Portfolio of Nikhil Sutar, MERN-stack & AI/ML enthusiast based in Mumbai.",
-  alternates: { canonical: "https://kineshlohar.vercel.app/" },
+  alternates: { canonical: "https://nikhilsutar.vercel.app/" },
   icons: {
     icon: '/logo.png',
     other: [
       {
         rel: 'canonical',
-        url: 'https://kineshlohar.vercel.app/',
+        url: 'https://nikhilsutar.vercel.app/',
       },
       // Social Media Links
       { rel: 'me', url: 'https://x.com/nikhilsutar_' },
@@ -32,10 +32,10 @@ export const metadata: Metadata = {
     Nikhil Sutar specializes in Next.js, React, Node.js, and MongoDB—crafting pixel-perfect UI and scalable backends.
     With hands-on experience in AI/ML integration and modern DevOps pipelines, Nikhil Sutar delivers robust, elegant solutions.
   `.trim().replace(/\s+/g, ' '),
-    url: "https://kineshlohar.vercel.app/",
+    url: "https://nikhilsutar.vercel.app/",
     siteName: "Nikhil Sutar Full stack developer personal portfolio dynamic website",
     images: [
-      { url: "https://kineshlohar.vercel.app/og-banner.png", width: 1200, height: 630 }
+      { url: "https://nikhilsutar.vercel.app/og-banner.png", width: 1200, height: 630 }
     ],
   },
   twitter: {
@@ -110,13 +110,13 @@ export default function RootLayout({
       className={`${inter.className} ${breeserif.variable} ${eaglelake.variable} ${lato.variable}`}
     >
       <Head>
-        <link rel="me" href="https://x.com/kinesh_lohar" />
-        <link rel="me" href="https://www.linkedin.com/in/kineshlohar" />
-        <link rel="me" href="https://github.com/kineshlohar" />
-        <link rel="me" href="https://www.freecodecamp.org/fcc59cce604-c645-497c-a473-73b95c9182d1" />
-        <link rel="me" href="https://www.hackerrank.com/kineshlohar" />
-        <link rel="me" href="https://www.instagram.com/kinesh_malviya" />
-        <link rel="me" href="https://www.snapchat.com/add/kinesh123" />
+        <link rel="me" href="https://x.com/nikhilsutar_" />
+        <link rel="me" href="https://www.linkedin.com/in/nikhilsutar" />
+        <link rel="me" href="https://github.com/nikhilsutar81" />
+        <link rel="me" href="" />
+        <link rel="me" href="" />
+        <link rel="me" href="https://www.instagram.com/nikkkhil.77" />
+        <link rel="me" href="" />
         <meta charSet="utf-8" />
         <meta name="google-site-verification" content="a03BjLVPwh2y04RlnKD-GgSxWiLZKYo1DWBpD8dK6AU" />
       </Head>
@@ -145,13 +145,13 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              "name": "Kinesh Lohar",
-              "url": "https://kineshlohar.vercel.app",
+              "name": "Nikhil Sutar",
+              "url": "https://nikhilsutar.vercel.app",
               "sameAs": [
-                "https://www.linkedin.com/in/kineshlohar",
-                "https://github.com/kineshlohar",
-                "https://twitter.com/kineshlohar",
-                "https://www.instagram.com/kinesh_malviya",
+                "https://www.linkedin.com/in/nikhilsutar",
+                "https://github.com/nikhilsutar81",
+                "https://twitter.com/nikhilsutar_",
+                "https://www.instagram.com/nikkkhil.77",
               ],
               "jobTitle": "Full Stack Developer",
               "worksFor": { "@type": "Organization", "name": "I-Pangram Digital Service LLP" },

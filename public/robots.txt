@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://kineshlohar.vercel.app/
+Host: https://nikhilsutar.vercel.app/
 
 # Sitemaps
-Sitemap: https://kineshlohar.vercel.app/sitemap.xml
+Sitemap: https://nikhilsutar.vercel.app/sitemap.xml
